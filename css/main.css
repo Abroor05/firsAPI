@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+nav {
+  padding: 20px 0;
+  box-shadow: 0 0 10px 10px rgb(226, 224, 224);
+  margin-bottom: 20px;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container h4 {
+  color: #111517;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav .container span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+nav .container span i {
+  cursor: pointer;
+}
+
+#region {
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 0 0 10px 0px rgb(218, 210, 210);
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.search {
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 0 0 10px 0px rgb(218, 210, 210);
+}
+
+.qidiruv {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px 35px 10px 30px;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+.lupa {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+/* main */
+
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.flag {
+  width: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0px rgb(232, 227, 227);
+}
+
+.flag:hover .more{
+    left: 50%;    
+    transition: all .5s ease;
+}
+.flag-img {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.flag-img img {
+  width: 100%;
+}
+
+.more {
+    position: absolute;
+    left: -100px;
+    color: white;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.more:hover {
+    color: black;
+}
+
+.flag-info {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.flag-info h4 {
+  font-size: 18px;
+  color: #111517;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.flag-info span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flag-info span h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.flag-info span h5 p {
+    font-size: 16px;
+    color: #111517;
+    font-weight: 400;
+}
+
+/* js boshlanishi */
+
+body .quyosh {
+    display: none;
+}
+
+body.dark {
+  background-color: #202C36;
+  color: white;
+}
+
+
+body.dark #region {
+  background-color: #2B3844;
+  color: white;
+  box-shadow: none;
+}
+
+body.dark .search {
+  background-color: #2B3844;
+  box-shadow: none;
+  color: white;
+}
+
+body.dark nav {
+  box-shadow: none;
+  background-color: #2B3844;
+}
+
+body.dark nav h4 {
+  color: white;
+}
+
+body.dark .flag {
+  background-color: #2B3844;
+  box-shadow: none;
+}
+
+
+body.dark .flag .flag-info h4 {
+  color: white;
+}
+
+body.dark .flag .flag-info h5 p{
+  color: white;
+}
+
+body.dark .oy {
+  display: none;
+}
+
+body.dark .quyosh {
+  display: block;
+}
+
+body .oy {
+  display: block;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 476px) {
+  .container{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .hero .container {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav h4 {
+    font-size: 16px;
+  }
+}
