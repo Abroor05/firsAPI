@@ -135,10 +135,11 @@ nav .container span i {
     justify-content: center;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 700;
 }
 
 .more:hover {
-    color: black;
+    color: rgb(94, 94, 243);
 }
 
 .flag-info {
