@@ -236,6 +236,16 @@ body .oy {
 }
 
 
+.flag.hidden {
+  display: none;
+}
+
+.darkMode {
+  cursor: pointer;
+}
+
+
+
 
 /* responsive */
 
