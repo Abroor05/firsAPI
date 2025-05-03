@@ -92,7 +92,7 @@ nav .container span i {
 
 .flags {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
@@ -114,11 +114,13 @@ nav .container span i {
 .flag-img {
   width: 100%;
   margin-bottom: 20px;
+  height: 180px;
   position: relative;
 }
 
 .flag-img img {
   width: 100%;
+  height: 100%;
 }
 
 .more {
